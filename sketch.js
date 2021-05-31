@@ -25,7 +25,7 @@ function setup() {
   dog.scale=0.15;
 
   //create feed the dog button here
-  
+
   addFood=createButton("Add Food");
   addFood.position(800,95);
   addFood.mousePressed(addFoods);
@@ -50,11 +50,11 @@ function draw() {
   fill(255,255,255)
   if(lastFed != null){
     if(lastFed>=12){
-      text("Last Feed: "+ lastFed%12+"PM",350,30)
+      text("Last Feed: "+ lastFed%12+" PM",350,30)
     }else if(lastFed==0){
       text("Last Feed: 12 AM",350,30)
     }else{
-      text("Last Feed: "+ lastFed+"AM",350,30)
+      text("Last Feed: "+ lastFed+" AM",350,30)
     }
   }
 
